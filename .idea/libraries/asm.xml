@@ -1,19 +1,15 @@
 <component name="libraryTable">
   <library name="asm">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-7.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-tree-7.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-analysis-7.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-commons-7.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-util-7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-6.0-src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-xml-6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-analysis-6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-util-6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-tree-6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-commons-6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/test/com/facebook/buck/testutil/integration/testlibs/third-party/java/asm/asm-6.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-7.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-tree-7.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-analysis-7.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-commons-7.0-sources.jar!/" />
-      <root url="jar://$PROJECT_DIR$/third-party/java/asm/asm-util-7.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

@@ -2,10 +2,9 @@
   <library name="jopt-simple">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/jopt-simple/jopt-simple-4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/jopt-simple/jopt-simple-4.6-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/jopt-simple/jopt-simple-4.6-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

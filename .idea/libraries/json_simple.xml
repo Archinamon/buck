@@ -2,10 +2,9 @@
   <library name="json-simple">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/json-simple/json-simple-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/json-simple/json-simple-1.1.1-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/json-simple/json-simple-1.1.1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

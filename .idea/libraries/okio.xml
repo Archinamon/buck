@@ -2,10 +2,9 @@
   <library name="okio">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/okio/okio-1.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/okio/okio-1.13.0-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/okio/okio-1.13.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

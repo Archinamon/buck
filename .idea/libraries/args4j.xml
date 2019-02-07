@@ -2,10 +2,9 @@
   <library name="args4j">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/args4j/args4j-2.0.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/args4j/args4j-2.0.30-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/args4j/args4j-2.0.30-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

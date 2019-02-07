@@ -2,10 +2,9 @@
   <library name="concurrent-locks">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/concurrent-locks/concurrent-locks-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/concurrent-locks/concurrent-locks-1.0.0-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/concurrent-locks/concurrent-locks-1.0.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

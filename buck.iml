@@ -139,5 +139,8 @@
     <orderEntry type="library" name="zstd-jni-1.3.5-2" level="project" />
     <orderEntry type="library" name="a2api" level="project" />
     <orderEntry type="library" name="devspeed.logging" level="project" />
+    <orderEntry type="module" module-name="aosp" />
+    <orderEntry type="module" module-name="dx" />
+    <orderEntry type="module" module-name="tests" />
   </component>
 </module>

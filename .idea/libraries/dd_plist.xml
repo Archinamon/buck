@@ -2,10 +2,9 @@
   <library name="dd-plist">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/dd-plist/dd-plist.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/dd-plist/dd-plist-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/dd-plist/dd-plist-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

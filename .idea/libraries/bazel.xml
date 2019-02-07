@@ -1,11 +1,10 @@
 <component name="libraryTable">
   <library name="bazel">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/third-party/java/bazel/bazel_deploy-src.jar!/" />
       <root url="jar://$PROJECT_DIR$/third-party/java/bazel/bazel_deploy.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/bazel/bazel_deploy-src.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

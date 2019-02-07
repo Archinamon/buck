@@ -1,11 +1,12 @@
 <component name="libraryTable">
   <library name="okhttp">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/third-party/java/okhttp/okhttp-tls-3.11.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/okhttp/okhttp-tls-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/okhttp/okhttp-3.11.0-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/third-party/java/okhttp/okhttp-3.11.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/okhttp/okhttp-3.11.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

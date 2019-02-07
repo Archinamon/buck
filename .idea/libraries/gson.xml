@@ -2,10 +2,9 @@
   <library name="gson">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/third-party/java/gson/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/gson/gson-2.8.2-sources.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/gson/gson-2.8.2-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

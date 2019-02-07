@@ -1,7 +1,16 @@
 <component name="libraryTable">
   <library name="android">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/third-party/java/intellij/android.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/ddmlib-25.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/sdk-common-25.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/layoutlib-api-25.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/sdklib-25.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/sdk-common-25.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/ddmlib-25.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/sdklib-25.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/layoutlib-api-25.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/common-25.3.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/third-party/java/android/common-25.3.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

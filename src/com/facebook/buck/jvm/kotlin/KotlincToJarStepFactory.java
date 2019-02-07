@@ -70,7 +70,6 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
   @AddToRuleKey private final ExtraClasspathProvider extraClassPath;
   @AddToRuleKey private final Javac javac;
   @AddToRuleKey private final JavacOptions javacOptions;
-  private final ImmutableSortedSet<Path> kotlinHomeLibraries;
 
   private static final String COMPILER_BUILTINS = "-Xadd-compiler-builtins";
   private static final String LOAD_BUILTINS_FROM = "-Xload-builtins-from-dependencies";
@@ -101,14 +100,12 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
 
   KotlincToJarStepFactory(
       Kotlinc kotlinc,
-      ImmutableSortedSet<Path> kotlinHomeLibraries,
       ImmutableList<String> extraKotlincArguments,
       AnnotationProcessingTool annotationProcessingTool,
       ExtraClasspathProvider extraClassPath,
       Javac javac,
       JavacOptions javacOptions) {
     this.kotlinc = kotlinc;
-    this.kotlinHomeLibraries = kotlinHomeLibraries;
     this.extraKotlincArguments = extraKotlincArguments;
     this.annotationProcessingTool = annotationProcessingTool;
     this.extraClassPath = extraClassPath;
@@ -176,7 +173,7 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
                   Optional.ofNullable(extraClassPath.getExtraClasspath())
                       .orElse(ImmutableList.of()))
               .addAll(declaredClasspathEntries)
-              .addAll(kotlinHomeLibraries)
+              .addAll(kotlinc.getHomeLibraries(buildContext.getSourcePathResolver()))
               .build();
 
       if (generatingCode && annotationProcessingTool.equals(AnnotationProcessingTool.KAPT)) {
@@ -227,6 +224,7 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
               pathToSrcsList,
               allClasspaths,
               kotlinc,
+              kotlinc.getHomeLibraries(buildContext.getSourcePathResolver()),
               ImmutableList.<String>builder()
                   .addAll(extraKotlincArguments)
                   .add(NO_STDLIB)
@@ -359,6 +357,7 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
                 .addAll(declaredClasspathEntries)
                 .build(),
             kotlinc,
+            kotlinc.getHomeLibraries(resolver),
             ImmutableList.<String>builder()
                 .addAll(extraArguments)
                 .add(MODULE_NAME)
@@ -387,6 +386,7 @@ public class KotlincToJarStepFactory extends CompileToJarStepFactory implements 
                 .addAll(declaredClasspathEntries)
                 .build(),
             kotlinc,
+            kotlinc.getHomeLibraries(resolver),
             ImmutableList.<String>builder()
                 .addAll(extraArguments)
                 .add(MODULE_NAME)
