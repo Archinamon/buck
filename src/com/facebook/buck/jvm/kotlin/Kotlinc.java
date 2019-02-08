@@ -19,7 +19,7 @@ package com.facebook.buck.jvm.kotlin;
 import static com.facebook.buck.jvm.java.Javac.SRC_JAR;
 import static com.facebook.buck.jvm.java.Javac.SRC_ZIP;
 
-import com.facebook.buck.core.build.execution.context.AbstractExecutionContext;
+import com.facebook.buck.core.build.execution.context.ExecutionContext;
 import com.facebook.buck.core.model.BuildTarget;
 import com.facebook.buck.core.sourcepath.resolver.SourcePathResolver;
 import com.facebook.buck.core.toolchain.tool.Tool;
