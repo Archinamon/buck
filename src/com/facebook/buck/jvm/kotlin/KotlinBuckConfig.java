@@ -19,6 +19,7 @@ package com.facebook.buck.jvm.kotlin;
 import com.facebook.buck.core.config.BuckConfig;
 import com.facebook.buck.core.exceptions.HumanReadableException;
 import com.facebook.buck.core.model.BuildTarget;
+import com.facebook.buck.core.model.EmptyTargetConfiguration;
 import com.facebook.buck.core.sourcepath.SourcePath;
 import com.facebook.buck.io.ExecutableFinder;
 import java.io.IOException;
@@ -47,7 +48,7 @@ public class KotlinBuckConfig {
         kotlinc = new ExternalKotlinc(getPathToCompilerBinary());
       } else {
         Optional<SourcePath> kotlinHomeSourcePath =
-            delegate.getSourcePath(SECTION, KOTLIN_HOME_CONFIG);
+            delegate.getSourcePath(SECTION, KOTLIN_HOME_CONFIG, EmptyTargetConfiguration.INSTANCE);
         if (kotlinHomeSourcePath.isPresent()) {
           kotlinc = new JarBackedReflectedKotlinc(kotlinHomeSourcePath.get());
         } else {
@@ -60,7 +61,7 @@ public class KotlinBuckConfig {
   }
 
   public Optional<BuildTarget> getKotlinHomeTarget() {
-    return delegate.getMaybeBuildTarget(SECTION, KOTLIN_HOME_CONFIG);
+    return delegate.getMaybeBuildTarget(SECTION, KOTLIN_HOME_CONFIG, EmptyTargetConfiguration.INSTANCE);
   }
 
   private Path getPathToCompilerBinary() {

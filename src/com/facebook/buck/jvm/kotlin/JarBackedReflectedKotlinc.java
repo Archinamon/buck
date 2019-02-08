@@ -16,7 +16,7 @@
 
 package com.facebook.buck.jvm.kotlin;
 
-
+import com.facebook.buck.core.build.execution.context.ExecutionContext;
 import com.facebook.buck.core.exceptions.HumanReadableException;
 import com.facebook.buck.core.model.BuildTarget;
 import com.facebook.buck.core.rulekey.AddToRuleKey;
@@ -151,7 +151,8 @@ public class JarBackedReflectedKotlinc implements Kotlinc {
       ImmutableSortedSet<Path> kotlinSourceFilePaths,
       Path pathToSrcsList,
       Optional<Path> workingDirectory,
-      ProjectFilesystem projectFilesystem) {
+      ProjectFilesystem projectFilesystem)
+      throws InterruptedException {
 
     ImmutableList<Path> expandedSources;
     try {
